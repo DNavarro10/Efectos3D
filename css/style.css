@@ -56,7 +56,7 @@ header{
 
 .contenedor section > div {
 	position: relative;
-    background: #6A30AC;
+    background: rgba(58,133,135,1);
 	margin: 25px 15px;
 	width: 180px;
     height: 90px;
@@ -67,29 +67,7 @@ header{
 	text-align: center;
 	display: inline-block;
 }
-section > .fade {
-    position: relative;
-    margin: 15px 5px;
-    width: inherit;
-    height: inherit;
-    line-height: inherit;
-    padding: inherit;
-    overflow: hidden;
-    
-}
-.contenedor section div .tapa{
-   
-    width: inherit;
-    height: inherit;
-    background: #DBEDE7;
-    top: 0px;
-    left: 180px;
-    position: absolute;
-    z-index: 1;
-    overflow: hidden;  
 
-
-}
 .contenedor .accion{
     text-align: center;
 }

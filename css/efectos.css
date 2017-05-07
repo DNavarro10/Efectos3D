@@ -1,0 +1,100 @@
+.girox:hover{
+	-webkit-animation: giro 2s 1 0.5s;
+	-o-animation: giro 2s 1 0.5s;
+	animation: giro 2s 1 0.5s;
+	backface-visibility: visible;
+
+}
+
+@keyframes giro{
+	0%{
+		opacity: 0.5;
+		 -webkit-transform: perspective(200px) rotateX(90deg);
+		    -moz-transform: perspective(200px) rotateX(90deg);
+		     -ms-transform: perspective(200px) rotateX(90deg);
+		      -o-transform: perspective(200px) rotateX(90deg);
+		         transform: perspective(200px) rotateX(90deg); 
+	}
+	40%{
+		 -webkit-transform: perspective(200px) rotateX(-20deg);
+		    -moz-transform: perspective(200px) rotateX(-20deg);
+		     -ms-transform: perspective(200px) rotateX(-20deg);
+		      -o-transform: perspective(200px) rotateX(-20deg);
+		         transform: perspective(200px) rotateX(-20deg); 
+	}
+	70%{
+		 -webkit-transform: perspective(200px) rotateX(20deg);
+		    -moz-transform: perspective(200px) rotateX(20deg);
+		     -ms-transform: perspective(200px) rotateX(20deg);
+		      -o-transform: perspective(200px) rotateX(20deg);
+		         transform: perspective(200px) rotateX(20deg); 
+	}
+}
+.giroy:hover{
+	-webkit-animation: giroy 2s 1 0.5s;
+	-o-animation: giroy 2s 1 0.5s;
+	animation: giroy 2s 1 0.5s;
+	backface-visibility: visible;
+
+}
+
+@keyframes giroy{
+	0%{
+		opacity: 0.5;
+		 -webkit-transform: perspective(200px) rotateY(90deg);
+		    -moz-transform: perspective(200px) rotateY(90deg);
+		     -ms-transform: perspective(200px) rotateY(90deg);
+		      -o-transform: perspective(200px) rotateY(90deg);
+		         transform: perspective(200px) rotateY(90deg); 
+	}
+	40%{
+		 -webkit-transform: perspective(200px) rotateY(-20deg);
+		    -moz-transform: perspective(200px) rotateY(-20deg);
+		     -ms-transform: perspective(200px) rotateY(-20deg);
+		      -o-transform: perspective(200px) rotateY(-20deg);
+		         transform: perspective(200px) rotateY(-20deg); 
+	}
+	70%{
+		 -webkit-transform: perspective(200px) rotateY(20deg);
+		    -moz-transform: perspective(200px) rotateY(20deg);
+		     -ms-transform: perspective(200px) rotateY(20deg);
+		      -o-transform: perspective(200px) rotateY(20deg);
+		         transform: perspective(200px) rotateY(20deg); 
+	}
+}
+
+.giroOutY:hover{
+	-webkit-animation: giroOuty 1.5s 1 forwards;
+	-o-animation: giroOuty 1.5s 1 forwards;
+	animation: giroOuty 1.5s 1 forwards;
+}
+
+@keyframes giroOuty{
+	100%{
+		opacity: 0.3;
+		-webkit-transform: perspective(150px) rotateY(90deg);
+		   -moz-transform: perspective(150px) rotateY(90deg);
+		    -ms-transform: perspective(150px) rotateY(90deg);
+		     -o-transform: perspective(150px) rotateY(90deg);
+		        transform: perspective(150px) rotateY(90deg);
+
+	}
+}
+
+.giroOutx:hover{
+	-webkit-animation: giroOutX 1.5s 1 forwards;
+	-o-animation: giroOutX 1.5s 1 forwards;
+	animation: giroOutX 1.5s 1 forwards;
+}
+
+@keyframes giroOutX{
+	100%{
+		opacity: 0.3;
+		-webkit-transform: perspective(150px) rotateX(-90deg);
+		   -moz-transform: perspective(150px) rotateX(-90deg);
+		    -ms-transform: perspective(150px) rotateX(-90deg);
+		     -o-transform: perspective(150px) rotateX(-90deg);
+		        transform: perspective(150px) rotateX(-90deg);
+
+	}
+}
