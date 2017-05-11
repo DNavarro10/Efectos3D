@@ -67,6 +67,39 @@ header{
 	text-align: center;
 	display: inline-block;
 }
+.muestra > div{
+    border: solid 2px black;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+
+} 
+.muestra{
+    -webkit-transition:  .5s ease-in-out;
+       -moz-transition:  .5s ease-in-out;
+        -ms-transition:  .5s ease-in-out;
+         -o-transition:  .5s ease-in-out;
+            transition:  .5s ease-in-out;
+            transform-style: preserve-3d;
+}
+.muestra:hover{
+    -webkit-transform: perspective(400px) rotateY(-80deg) translateZ(100px);
+       -moz-transform: perspective(400px) rotateY(-80deg) translateZ(100px);
+        -ms-transform: perspective(400px) rotateY(-80deg) translateZ(100px);
+         -o-transform: perspective(400px) rotateY(-80deg) translateZ(100px);
+            transform: perspective(400px) rotateY(-80deg) translateZ(100px);
+}
+.muestra .front{
+    background: red;
+
+}
+.muestra .back{
+    background: green;
+    -webkit-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    left: 100%;
+}
 
 .contenedor .accion{
     text-align: center;
