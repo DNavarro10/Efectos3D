@@ -104,6 +104,7 @@
 	-o-animation: giro 2s 1;
 	animation: giro 2s 1;
 
+
 }
 
 @keyframes giro{
@@ -135,6 +136,79 @@
 		    -ms-transform: perspective(300px) rotateY(360deg);
 		     -o-transform: perspective(300px) rotateY(360deg);
 		        transform: perspective(300px) rotateY(360deg);
-		
+
 	}
+
+
+
+}
+/* cubo */
+.cubo .front{
+    
+    box-shadow: inset 0px 2px 20px black;
+    background: url('../img/muestra.jpg');
+	background-size:cover ;
+	-webkit-transition:  .25s ease;
+	   -moz-transition:  .25s ease;
+	    -ms-transition:  .25s ease;
+	     -o-transition:  .25s ease;
+	        transition:  .25s ease;
+}
+.cubo .back{
+    background: white;
+    -webkit-transform: translateZ(-90px)rotateY(90deg);
+       -moz-transform: translateZ(-90px)rotateY(90deg);
+        -ms-transform: translateZ(-90px)rotateY(90deg);
+         -o-transform: translateZ(-90px)rotateY(90deg);
+            transform: translateZ(-90px)rotateY(90deg);
+    left: 90px ;
+
+}
+.cubo .back hr{
+    background: #CA1919;
+    padding: 1.2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: initial;
+    margin-bottom: initial;
+
+}
+.cubo .back h3{
+	line-height: initial;
+	text-align: initial;
+	color: black;
+	text-shadow: initial;
+	margin:0px;
+	width: 90%;
+	margin-left: 5%;
+}
+.cubo .back p{
+	line-height: initial;
+	text-align: initial;
+	text-shadow: initial;
+	color: black;
+	margin:0px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.cubo{
+
+	-webkit-transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
+	   -moz-transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
+	    -ms-transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
+	     -o-transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
+	        transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
+}
+
+.cubo:hover{
+
+	-webkit-transform: perspective(800px) rotateY(-80deg);
+	   -moz-transform: perspective(800px) rotateY(-80deg);
+	    -ms-transform: perspective(800px) rotateY(-80deg);
+	     -o-transform: perspective(800px) rotateY(-80deg);
+	        transform: perspective(800px) rotateY(-80deg);
+}
+.cubo:hover .front{
+	opacity: 1;
 }
