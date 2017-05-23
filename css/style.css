@@ -72,15 +72,23 @@ header{
 	font-weight: bolder;
 	text-align: center;
 	display: inline-block;
-  
+ 
 }
+.trigger {
 
+    position: absolute;
+    background: none;
+
+}
+.flip-1{
+    height: inherit;
+    width: inherit;
+}
 .cubo{
-    padding: -10px;
+    
     background: blue;
-    position: relative;
+    position: absolute;
     display: inline-block;
-    margin: 50px;
     width: inherit;
     height: inherit;
     top: 0px;

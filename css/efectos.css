@@ -1,8 +1,16 @@
+.girox{
+	-webkit-transition: all .75s ease;
+	   -moz-transition: all .75s ease;
+	    -ms-transition: all .75s ease;
+	     -o-transition: all .75s ease;
+	        transition: all .75s ease;
+
+}
+
 .girox:hover{
-	-webkit-animation: girox 2s 1 0.5s;
-	-o-animation: girox 2s 1 0.5s;
-	animation: girox 2s 1 0.5s;
-	backface-visibility: visible;
+	-webkit-animation: girox 2s 1 ;
+	-o-animation: girox 2s 1 ;
+	animation: girox 2s 1 ;
 
 }
 
@@ -31,10 +39,9 @@
 	}
 }
 .giroy:hover{
-	-webkit-animation: giroy 2s 1 0.5s;
-	-o-animation: giroy 2s 1 0.5s;
-	animation: giroy 2s 1 0.5s;
-	backface-visibility: visible;
+	-webkit-animation: giroy 2s 1;
+	-o-animation: giroy 2s 1 ;
+	animation: giroy 2s 1;
 
 }
 
@@ -98,20 +105,15 @@
 
 	}
 }
-.giro{
-	-wekit-backface-visibility: hidden;
-
-}
 
 .giro:hover{
-	-webkit-animation: giro 2s 1;
-	-o-animation: giro 2s 1;
-	animation: giro 2s 1;
-	
-
+	-webkit-animation: 1s giro3d 1;
+	-o-animation: 1s giro3d 1;
+	animation: 1s giro3d 1;
+	backface-visibility: visible;
 }
 
-@keyframes giro{
+@keyframes giro3d{
 	40%{
 		-webkit-transform: perspective(300px) translateZ(120px) rotateY(170deg) ;
 		   -moz-transform: perspective(300px) translateZ(120px) rotateY(170deg) ;
@@ -120,19 +122,18 @@
 		        transform: perspective(300px) translateZ(120px) rotateY(170deg) ;
 	}
 	50%{
-		-webkit-transform: perspective(300px) translateZ(120px) rotateY(190deg) ;
-		   -moz-transform: perspective(300px) translateZ(120px) rotateY(190deg) ;
-		    -ms-transform: perspective(300px) translateZ(120px) rotateY(190deg) ;
-		     -o-transform: perspective(300px) translateZ(120px) rotateY(190deg) ;
-		        transform: perspective(300px) translateZ(120px) rotateY(190deg) ;
-	}	
+		-webkit-transform: perspective(300px) translateZ(120px) rotateY(190deg);
+		   -moz-transform: perspective(300px) translateZ(120px) rotateY(190deg);
+		    -ms-transform: perspective(300px) translateZ(120px) rotateY(190deg);
+		     -o-transform: perspective(300px) translateZ(120px) rotateY(190deg);
+		        transform: perspective(300px) translateZ(120px) rotateY(190deg);
+	}
 	80%{
-		-webkit-transform: perspective(300px) translateZ(10px) rotateY(340deg) ;
-		   -moz-transform: perspective(300px) translateZ(10px) rotateY(340deg) ;
-		    -ms-transform: perspective(300px) translateZ(10px) rotateY(340deg) ;
-		     -o-transform: perspective(300px) translateZ(10px) rotateY(340deg) ;
-		        transform: perspective(300px) translateZ(10px) rotateY(340deg) ;
-		
+		-webkit-transform: perspective(300px) translateZ(0px) rotateY(360deg);
+		   -moz-transform: perspective(300px) translateZ(0px) rotateY(360deg);
+		    -ms-transform: perspective(300px) translateZ(0px) rotateY(360deg);
+		     -o-transform: perspective(300px) translateZ(0px) rotateY(360deg);
+		        transform: perspective(300px) translateZ(0px) rotateY(360deg);
 	}
 	100%{
 		-webkit-transform: perspective(300px) rotateY(360deg);
@@ -140,11 +141,7 @@
 		    -ms-transform: perspective(300px) rotateY(360deg);
 		     -o-transform: perspective(300px) rotateY(360deg);
 		        transform: perspective(300px) rotateY(360deg);
-
 	}
-
-
-
 }
 /* flip*/
 .flip{
@@ -157,16 +154,17 @@
 	        transform: perspective(600px);
 	
 	-webkit-transform-style: preserve-3d; 
+	
 }
-.flip-1{
-	 background: url('../img/muestra.jpg');
-	 background-size:cover ;
-}
-.flip .flip-1, .flip .flip-2{
+.flip-1 .flip-2{
 	position: absolute;
-	backface-visibility: hidden;
+	height: inherit;
+	width: inherit; 
+	line-height: initial;
+
 }
-.flip .flip-2{
+
+.flip-2{
 	-webkit-transform: rotateY(-180deg);
 	   -moz-transform: rotateY(-180deg);
 	    -ms-transform: rotateY(-180deg);
@@ -239,9 +237,10 @@
 	    -ms-transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
 	     -o-transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
 	        transition:  .5s ease-in-out ; transform-style: preserve-3d; transform-origin: left center; 
+	pointer-events: none;
 }
 
-.cubo:hover{
+.trigger:hover .cubo {
 
 	-webkit-transform: perspective(800px) rotateY(-80deg);
 	   -moz-transform: perspective(800px) rotateY(-80deg);
