@@ -1,11 +1,3 @@
-.girox{
-	-webkit-transition: all .75s ease;
-	   -moz-transition: all .75s ease;
-	    -ms-transition: all .75s ease;
-	     -o-transition: all .75s ease;
-	        transition: all .75s ease;
-
-}
 
 .girox:hover{
 	-webkit-animation: girox 2s 1 ;
@@ -105,12 +97,28 @@
 
 	}
 }
+.giro{
+	position: relative;
+	transition: all 1s ease;
+	-webkit-transform: perspective(600px);
+	   -moz-transform: perspective(600px);
+	    -ms-transform: perspective(600px);
+	     -o-transform: perspective(600px);
+	        transform: perspective(600px);
+	
+	-webkit-transform-style: preserve-3d; 
+
+}
+.giro-f{
+	background-size:cover ;
+	backface-visibility: hidden;
+}
+
 
 .giro:hover{
 	-webkit-animation: 1s giro3d 1;
 	-o-animation: 1s giro3d 1;
 	animation: 1s giro3d 1;
-	backface-visibility: visible;
 }
 
 @keyframes giro3d{
@@ -156,20 +164,26 @@
 	-webkit-transform-style: preserve-3d; 
 	
 }
-.flip-1 .flip-2{
-	position: absolute;
-	height: inherit;
-	width: inherit; 
-	line-height: initial;
 
+.flip-1{
+	background: url('../img/muestra.jpg');
+	background-size:cover ;
+	backface-visibility: hidden;
 }
 
 .flip-2{
+	width: inherit;
+	position: absolute;
 	-webkit-transform: rotateY(-180deg);
 	   -moz-transform: rotateY(-180deg);
 	    -ms-transform: rotateY(-180deg);
 	     -o-transform: rotateY(-180deg);
 	        transform: rotateY(-180deg);
+	 background: #999999;
+	 top: 0;
+	 left: 0;
+	 background: initial;
+
 }
 .flip:hover{
 
